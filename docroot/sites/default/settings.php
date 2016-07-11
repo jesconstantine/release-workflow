@@ -737,7 +737,7 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'lightning';
 $config_directories['sync'] = 'sites/lightning-8_veterans.dd/files/config_o21_zbNuH4QxiDy87mFVEmtqmuBVXrqQHoRNPYrsAy69lRAUwO52RELQ8VAsphrZAVcqqyeYRQ/sync';
-
+$config_directories['vcs'] = $app_root . '/../config/' . basename($site_path);
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
