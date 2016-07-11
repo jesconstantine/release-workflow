@@ -1,0 +1,14 @@
+uuid: 6fe6a497-e3ca-4410-90f8-ed8db2d75336
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.page_creator
+  module:
+    - user
+id: user_add_role_action.page_creator
+label: 'Add the Basic page Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: page_creator
