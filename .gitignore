@@ -4,3 +4,4 @@ docroot/sites/*/files
 docroot/sites/*/private
 acquia-files
 .DS_Store
+settings.local.php
