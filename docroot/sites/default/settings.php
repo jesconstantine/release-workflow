@@ -736,8 +736,22 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'lightning';
-$config_directories['sync'] = 'sites/lightning-8_veterans.dd/files/config_o21_zbNuH4QxiDy87mFVEmtqmuBVXrqQHoRNPYrsAy69lRAUwO52RELQ8VAsphrZAVcqqyeYRQ/sync';
+
+/**
+ * Custom config directory
+ * $config_directories key is a label used as sole argument in drush
+ * config-import + drush config-export that points to the directory where the
+ * config *.yml files live.  this location is sibling to docroot and is
+ * versioned.
+ *
+ * usage: drush config-export vcs // export config to location specified by
+ * vcs label
+ */
 $config_directories['vcs'] = $app_root . '/../config/' . basename($site_path);
+
+// ignore the default config directory label and location
+// directory has been deleted in file system
+// $config_directories['sync'] = 'sites/lightning-8_veterans.dd/files/config_o21_zbNuH4QxiDy87mFVEmtqmuBVXrqQHoRNPYrsAy69lRAUwO52RELQ8VAsphrZAVcqqyeYRQ/sync';
 
 // On Acquia Cloud, this include file configures Drupal to use the correct
 // database in each site environment (Dev, Stage, or Prod). To use this
