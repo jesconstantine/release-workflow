@@ -23,4 +23,14 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_governor: true
+  field_image: true
+  field_lieutenant_governor: true
+  field_press_contact_email: true
+  field_press_contact_name: true
+  field_press_contact_phone_number: true
+  field_release_date: true
+  field_secretary: true
+  field_sub_title: true
+  field_video: true
