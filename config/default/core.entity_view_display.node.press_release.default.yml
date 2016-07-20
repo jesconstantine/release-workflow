@@ -1,0 +1,111 @@
+uuid: 553129f8-0870-4f45-8956-56b1301b5396
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.press_release.body
+    - field.field.node.press_release.field_governor
+    - field.field.node.press_release.field_image
+    - field.field.node.press_release.field_lieutenant_governor
+    - field.field.node.press_release.field_press_contact_email
+    - field.field.node.press_release.field_press_contact_name
+    - field.field.node.press_release.field_press_contact_phone_number
+    - field.field.node.press_release.field_release_date
+    - field.field.node.press_release.field_secretary
+    - field.field.node.press_release.field_sub_title
+    - field.field.node.press_release.field_video
+    - node.type.press_release
+  module:
+    - datetime
+    - image
+    - text
+    - user
+    - video_embed_field
+id: node.press_release.default
+targetEntityType: node
+bundle: press_release
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_governor:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_image:
+    weight: 110
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_lieutenant_governor:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_press_contact_email:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_press_contact_name:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_press_contact_phone_number:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_release_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_secretary:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_sub_title:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_video:
+    weight: 111
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+  links:
+    weight: 100
+hidden: {  }

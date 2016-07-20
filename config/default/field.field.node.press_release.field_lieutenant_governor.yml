@@ -1,0 +1,21 @@
+uuid: e6cef6a9-b1c7-464d-ab6a-b6188715a20c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieutenant_governor
+    - node.type.press_release
+id: node.press_release.field_lieutenant_governor
+field_name: field_lieutenant_governor
+entity_type: node
+bundle: press_release
+label: 'Lieutenant Governor'
+description: 'Enter name of current Lt. Governor'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Lieutenant Governor Karyn Polito'
+default_value_callback: ''
+settings: {  }
+field_type: string

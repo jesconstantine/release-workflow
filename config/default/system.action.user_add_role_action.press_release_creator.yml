@@ -1,0 +1,14 @@
+uuid: b9e0efe8-9179-4687-bd27-a2cea9ac94ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.press_release_creator
+  module:
+    - user
+id: user_add_role_action.press_release_creator
+label: 'Add the Press Release Creator role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: press_release_creator

@@ -1,0 +1,17 @@
+uuid: e829a568-e77c-48aa-957d-c23ba8151eb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Press Release'
+type: press_release
+description: 'This is the content type to use if you want to create a press release.'
+help: 'Explanation field output'
+new_revision: false
+preview_mode: 1
+display_submitted: true
