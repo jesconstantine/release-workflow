@@ -1,0 +1,15 @@
+uuid: 7a07dec2-759c-4efc-a56a-311c68f83e2c
+langcode: en
+status: true
+dependencies: {  }
+id: press_release_reviewer
+label: 'Press Release Reviewer'
+weight: 8
+is_admin: null
+permissions:
+  - 'edit any press_release content'
+  - 'delete any press_release content'
+  - 'use draft_published transition'
+  - 'use needs_review_draft transition'
+  - 'use needs_review_published transition'
+  - 'use published_published transition'

@@ -1,0 +1,19 @@
+uuid: 393abf66-16a1-496b-ba8f-fffe5e3c24ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_press_contact_phone_number
+    - node.type.press_release
+id: node.press_release.field_press_contact_phone_number
+field_name: field_press_contact_phone_number
+entity_type: node
+bundle: press_release
+label: 'Press Contact Phone Number'
+description: 'Enter the phone number of the person press questions should be directed to.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

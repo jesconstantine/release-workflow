@@ -1,0 +1,21 @@
+uuid: 54841970-bad0-44a9-8cd7-3259d1b529ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_governor
+    - node.type.press_release
+id: node.press_release.field_governor
+field_name: field_governor
+entity_type: node
+bundle: press_release
+label: Governor
+description: 'Enter current Governor''s Name'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Charlie Baker'
+default_value_callback: ''
+settings: {  }
+field_type: string
